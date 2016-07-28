@@ -1,0 +1,27 @@
+- const url = `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/${highlight_version}/styles/${highlight_style}.min.css`;
+- const lang = 'ja';
+
+doctype html
+html(lang = lang)
+	head
+		meta(charset = "utf-8")
+		meta(
+			name = "viewport",
+			content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		)
+		title.
+			#{title}
+		link(
+			rel = "stylesheet",
+			type = "text/css",
+			href = "https://cdn.rawgit.com/andyferra/2554919/raw/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css"
+		)
+		link(
+			rel = "stylesheet",
+			type = "text/css",
+			href = url
+		)
+		style.
+			!{css_string}
+	body.
+		!{html_string}

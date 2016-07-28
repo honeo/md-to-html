@@ -1,0 +1,49 @@
+/*
+	これもrawgit経由にすると後々の変更が面倒になるためやらない
+*/
+
+body {
+	color: rgb(80, 80, 80);
+	margin: auto;
+	overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(80, 80, 80);
+}
+
+pre {
+	-webkit-border-radius: 7px;
+	   -moz-border-radius: 7px;
+			border-radius: 7px;
+	padding: 1em;
+}
+
+pre,
+pre > code {
+	background: #23241f;
+	color: #f8f8f2;
+	font: normal 10pt Consolas, Monaco, monospace;
+}
+
+/*
+	横幅が広ければTOCを上部固定
+*/
+@media screen and (min-width: 1000px) {
+
+	body {
+		padding-left:  200px;
+	}
+
+	body > ul:first-child {
+		position: fixed;
+		top: 0%;
+		left: 0%;
+	}
+}
+
+
+body > *:first-child,
+body > *:first-child * {
+	margin: 0px;
+}

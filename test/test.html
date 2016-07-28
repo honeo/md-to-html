@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><title>hd2html test</title><link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/andyferra/2554919/raw/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai-sublime.min.css"><style>/*
+	これもrawgit経由にすると後々の変更が面倒になるためやらない
+*/
+
+body {
+	color: rgb(80, 80, 80);
+	margin: auto;
+	overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(80, 80, 80);
+}
+
+pre {
+	-webkit-border-radius: 7px;
+	   -moz-border-radius: 7px;
+			border-radius: 7px;
+	padding: 1em;
+}
+
+pre,
+pre > code {
+	background: #23241f;
+	color: #f8f8f2;
+	font: normal 10pt Consolas, Monaco, monospace;
+}
+
+/*
+	横幅が広ければTOCを上部固定
+*/
+@media screen and (min-width: 1000px) {
+
+	body {
+		padding-left:  200px;
+	}
+
+	body > ul:first-child {
+		position: fixed;
+		top: 0%;
+		left: 0%;
+	}
+}
+
+
+body > *:first-child,
+body > *:first-child * {
+	margin: 0px;
+}
+</style></head><body><ul>
+<li><a href="#md2html-test">md2html-test</a><ul>
+<li><a href="#HOGE">HOGE</a></li>
+<li><a href="#S_p_A_c_E">S p A c E</a></li>
+<li><a href="#ほげほげ">ほげほげ</a></li>
+<li><a href="#code">code</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="md2html-test">md2html-test</h1>
+<h2 id="HOGE">HOGE</h2>
+<h3 id="hoge">hoge</h3>
+<h3 id="hoge2">hoge</h3>
+<h2 id="S_p_A_c_E">S p A c E</h2>
+<ul>
+<li>foo</li>
+<li>bar</li>
+</ul>
+<h2 id="ほげほげ">ほげほげ</h2>
+<h3 id="ほげ">ほげ</h3>
+<h3 id="ほげ2">ほげ</h3>
+<h2 id="code">code</h2>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$initHighlight</span>(<span class="hljs-params">block, cls</span>) </span>{
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">if</span> (cls.search(<span class="hljs-regexp">/\bno\-highlight\b/</span>) != <span class="hljs-number">-1</span>)
+      <span class="hljs-keyword">return</span> process(block, <span class="hljs-literal">true</span>, <span class="hljs-number">0x0F</span>) +
+             <span class="hljs-string">` class="<span class="hljs-subst">${cls}</span>"`</span>;
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-comment">/* handle exception */</span>
+  }
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> / <span class="hljs-number">2</span>; i &lt; classes.length; i++) {
+    <span class="hljs-keyword">if</span> (checkCondition(classes[i]) === <span class="hljs-literal">undefined</span>)
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'undefined'</span>);
+  }
+}
+
+<span class="hljs-keyword">export</span>  $initHighlight;
+</code></pre>
+</body></html>
