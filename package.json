@@ -1,5 +1,5 @@
 {
-  "name": "md2html",
+  "name": "md-to-html",
   "version": "1.0.0",
   "description": ".markdown => .html",
   "main": "index.js",
