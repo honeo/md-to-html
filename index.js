@@ -12,11 +12,12 @@ import marked from 'marked-id-no-overlap';
 import fs from 'fs';
 import pug from 'pug';
 import highlight from 'highlight.js';
+import path from 'path';
 import toc from 'markdown-toc';
 
 // Var
-const pug_func = pug.compileFile(__dirname+'/template.jade');
-const css_string = fs.readFileSync(__dirname+'/style.css');
+const pug_func = pug.compileFile( path.join(__dirname, 'template.jade') );
+const css_string = fs.readFileSync( path.join(__dirname, 'style.css') );
 const highlight_version = require('highlight.js/package.json').version;
 
 const options_default = {
