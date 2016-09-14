@@ -1,6 +1,6 @@
 {
   "name": "md-to-html",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": ".markdown => .html",
   "main": "index.js",
   "scripts": {

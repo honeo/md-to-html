@@ -86,6 +86,11 @@ function md2html(input, output, options_arg={}){
 */
 const href_cache = {}
 function toc_slugify(text, options, json){
+	// 何故か空になったとき用
+	if(!json){
+		return text;
+	}
+
 	if(typeof json.slug==='string'){
 		let href = text.replace(/ /g, '_');
 		if(href_cache[href]){
